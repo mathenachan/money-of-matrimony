@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1386px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background-color: #ccc;
+  z-index: +1;
+}
+
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* table */
+
+.calcPanel {
+
+  margin: 120px;
+  margin-top: 30px;
+  background-color: #FFF9EC;
+  border-radius: 50px;
+}
+
+
+table.calc {
+  table-layout: fixed;
+  margin: auto;
+  /* display: block; */
+  justify-content: space-between;
+  width: 95%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.calc tr {
+  border-bottom: 1px solid lightgray;
+  border-collapse: collapse;
+}
+
+table.calc td,
+table.calc th {
+  padding: 30px 30px;
+  word-wrap: break-word;
+}
+
+table.calc tbody td {
+  font-size: 13px;
+}
+
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 20px;
+  padding-left: 40px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.reset {
+  background-color: #D30000;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: white;
+  /* font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  font-family: 'Poppins';
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.reset:hover {
+  background-color: #A30000;
+}
+
+.reset:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.reset:focus-visible {
+  box-shadow: none;
+}
+
+
+.unchecked {
+  display: vertical;
+  color: lightgray;
+}
+
+/* site-title */
+.site-title {}
+
+.site-title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 3em;
+}
+
+/* site-nav */
+.site-nav {}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav_link {
+  display: inline-block;
+  margin: 0;
+  padding: 0 1em;
+  font-size: 1em;
+  line-height: 3em;
+}
+
+.nav_link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav_link a:hover {
+  text-decoration: underline;
+}
+
+/* sources */
+.sources {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.source_link {}
+
+.source_link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.source_link a:hover {
+  text-decoration: underline;
+}
+
+/* main */
+.main {
+  margin-bottom: 0;
+}
+
+.header+.main {
+  margin-top: 3em;
+}
+
+/* footer*/
+.footer {
+  margin: 3em 0;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* browser-warning*/
+@media (max-width: 1365px) {
+  .main::after {
+    content: "Please resize your browser to be at least 1366px wide.";
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    width: 14em;
+    font-size: 0.875em;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+}
