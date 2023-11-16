@@ -32,14 +32,15 @@
         <tbody>
           <tr>
             <td>
-              <h1><input type="checkbox" id="proposal" name="proposalgrp" onclick="ungrey(this)"> PROPOSAL</h1>
+              <h1><input type="checkbox" id="proposal" name="proposalgrp" onclick="ungrey(this)"> <label
+                  for="proposal">PROPOSAL</label></h1>
             </td>
             <td>
               <div class="unchecked" id="proposalgrp" name="proposalgrp">
-                <input type="checkbox" disabled="true" id="ring" value="6000" onclick="updateCost(this)">Engagement
-                ring<br>
-                <input type="checkbox" disabled="true" id="photographer" value="325"
-                  onclick="updateCost(this)">Photographer
+                <input type="checkbox" disabled="true" id="ring" value="6000" onclick="updateCost(this)">
+                <label for="ring">Engagement ring</label><br>
+                <input type="checkbox" disabled="true" id="e-photographer" value="325" onclick="updateCost(this)"><label
+                  for="e-photographer">Photographer</label>
               </div>
             </td>
             <td></td>
@@ -48,7 +49,7 @@
           <tr>
             <td>
               <h1><input type="checkbox" id="engagementparty" value="975" name="engagementgrp"
-                  onclick="updateCost(this); ungrey(this)"> ENGAGEMENT PARTY</h1>
+                  onclick="updateCost(this); ungrey(this)"> <label for="engagementparty">ENGAGEMENT PARTY</label></h1>
             </td>
             <td></td>
             <td></td>
@@ -56,7 +57,8 @@
 
           <tr>
             <td>
-              <h1><input type="checkbox" id="bridal" name="bridalgrp" onclick="ungrey(this)"> BRIDAL SHOWER</h1>
+              <h1><input type="checkbox" id="bridal" name="bridalgrp" onclick="ungrey(this)"> <label for="bridal">BRIDAL
+                  SHOWER</label></h1>
 
             </td>
             <td>
@@ -64,10 +66,10 @@
                 <form>
                   <input type="radio" disabled="true" id="lower-scale" value="600" name="scale"
                     onchange="updateCost(this)">
-                  Lower-scale<br>
+                  <label for="lower-scale">Lower-scale</label><br>
                   <input type="radio" disabled="true" id="upper-scale" value="1875" name="scale"
                     onchange="updateCost(this)">
-                  Upper-scale
+                  <label for="upper-scale">Upper-scale</label>
                 </form>
               </div>
             </td>
@@ -85,25 +87,23 @@
 
           <tr>
             <td>
-              <h1><input type="checkbox" id="bachelor" name="bachelorgrp" onclick="ungrey(this)"> BACHELOR PARTY</h1>
+              <h1><input type="checkbox" id="bachelor" name="bachelorgrp" onclick="ungrey(this)"> <label
+                  for="bachelor">BACHELOR PARTY</label></h1>
             </td>
             <td>
               <div class="unchecked" id="bachelorgrp" name="bachelorgrp">
                 <form>
-                  <input type="radio" disabled="true" id="one" value="350" name="duration"
-                    onchange="updateCost(this)">
-                  1 day<br>
-                  <input type="radio" disabled="true" id="two" value="550" name="duration"
-                    onchange="updateCost(this)">
-                  2 days<br>
+                  <input type="radio" disabled="true" id="one" value="350" name="duration" onchange="updateCost(this)">
+                  <label for="one">1 day</label><br>
+                  <input type="radio" disabled="true" id="two" value="550" name="duration" onchange="updateCost(this)">
+                  <label for="two">2 days</label><br>
                   <input type="radio" disabled="true" id="three" value="750" name="duration"
-                    onchange="updateCost(this)"> 3 days<br>
-                  <input type="radio" disabled="true" id="four" value="600" name="duration"
                     onchange="updateCost(this)">
-                  4 days<br>
-                  <input type="radio" disabled="true" id="five" value="850" name="duration"
-                    onchange="updateCost(this)">
-                  5+ days<br>
+                  <label for="three">3 days</label><br>
+                  <input type="radio" disabled="true" id="four" value="600" name="duration" onchange="updateCost(this)">
+                  <label for="four">4 days</label><br>
+                  <input type="radio" disabled="true" id="five" value="850" name="duration" onchange="updateCost(this)">
+                  <label for="five">5+ days</label><br>
                 </form>
                 <div>
             </td>
@@ -112,23 +112,26 @@
 
           <tr>
             <td>
-              <h1><input type="checkbox" id="bachelorette" name="bachelorettegrp" onclick="ungrey(this)"> BACHELORETTE
-                PARTY</h1>
+              <h1><input type="checkbox" id="bachelorette" name="bachelorettegrp" onclick="ungrey(this)">
+                <label for="bachelorette">BACHELORETTE PARTY</label>
+              </h1>
 
             </td>
             <td>
               <div class="unchecked" id="bachelorettegrp" name="bachelorettegrp">
                 <form>
-                  <input type="radio" disabled="true" id="one" value="150" name="duration2" onchange="updateCost(this)">
-                  1 day<br>
-                  <input type="radio" disabled="true" id="two" value="350" name="duration2" onchange="updateCost(this)">
-                  2 days<br>
-                  <input type="radio" disabled="true" id="three" value="450" name="duration2"
-                    onchange="updateCost(this)"> 3 days<br>
-                  <input type="radio" disabled="true" id="four" value="448" name="duration2"
-                    onchange="updateCost(this)"> 4 days<br>
-                  <input type="radio" disabled="true" id="five" value="525" name="duration2"
-                    onchange="updateCost(this)"> 5+ days<br>
+                  <input type="radio" disabled="true" id="one1" value="150" name="duration2"
+                    onchange="updateCost(this)">
+                  <label for="one1">1 day</label><br>
+                  <input type="radio" disabled="true" id="two1" value="350" name="duration2"
+                    onchange="updateCost(this)">
+                  <label for="two1">2 days</label><br>
+                  <input type="radio" disabled="true" id="three1" value="450" name="duration2"
+                    onchange="updateCost(this)"> <label for="three1">3 days</label><br>
+                  <input type="radio" disabled="true" id="four1" value="448" name="duration2"
+                    onchange="updateCost(this)"> <label for="four1">4 days</label><br>
+                  <input type="radio" disabled="true" id="five1" value="525" name="duration2"
+                    onchange="updateCost(this)"><label for="five1"> 5+ days</label><br>
                 </form>
               </div>
             </td>
@@ -142,8 +145,7 @@
             </td>
             <td>
               <form>
-                <input type="radio" id="town-hall" value="0" name="location" checked="true"
-                  onchange="updateCost(this)">
+                <input type="radio" id="town-hall" value="0" name="location" checked="true" onchange="updateCost(this)">
                 Town hall<br>
                 <input type="radio" id="venue" value="300" name="location" onchange="updateCost(this)">
                 Venue<br>
@@ -151,25 +153,30 @@
             </td>
             <td>
               <div>
-                <input type="checkbox" id="officiant" value="300"
-                  onclick="updateCost(this)">Officiant<br>
-                <input type="checkbox" id="rehearsal dinner" value="2300"
-                  onclick="updateCost(this)">Rehearsal dinner<br>
-                <input type="checkbox" id="photographer" value="2500"
-                  onclick="updateCost(this)">Photographer<br>
-                <input type="checkbox" id="videographer" value="1900"
-                  onclick="updateCost(this)">Videographer<br>
-                <input type="checkbox" id="invitations" value="530"
-                  onclick="updateCost(this)">Invitations<br>
-                <input type="checkbox" id="planner" value="1700" onclick="updateCost(this)">Event
-                planner<br>
-                <input type="checkbox" id="band" value="4300" onclick="updateCost(this)">Live band<br>
-                <input type="checkbox" id="florist" value="2300" onclick="updateCost(this)">Florist<br>
-                <input type="checkbox" id="dress" value="1800" onclick="updateCost(this)">Wedding
-                Dress<br>
-                <input type="checkbox" id="hair" value="130" onclick="updateCost(this)">Hairstylist<br>
-                <input type="checkbox"  id="makeup" value="115" onclick="updateCost(this)">Makeup
-                artist<br>
+                <input type="checkbox" id="officiant" value="300" onclick="updateCost(this)"><label
+                  for="officiant">Officiant</label><br>
+                <input type="checkbox" id="rehearsal-dinner" value="2300" onclick="updateCost(this)"><label
+                  for="rehearsal-dinner">Rehearsal dinner</label><br>
+                <input type="checkbox" id="photographer" value="2500" onclick="updateCost(this)"><label
+                  for="photographer">Photographer</label><br>
+                <input type="checkbox" id="videographer" value="1900" onclick="updateCost(this)"><label
+                  for="videographer">Videographer</label><br>
+                <input type="checkbox" id="invitations" value="530" onclick="updateCost(this)"><label
+                  for="invitations">Invitations</label><br>
+                <input type="checkbox" id="planner" value="1700" onclick="updateCost(this)">
+                <label for="planner">Event planner</label><br>
+                <input type="checkbox" id="band" value="4300" onclick="updateCost(this)"><label for="band">Live
+                  band</label><br>
+                <input type="checkbox" id="florist" value="2300" onclick="updateCost(this)"><label
+                  for="florist">Florist</label><br>
+                <input type="checkbox" id="dress" value="1800" onclick="updateCost(this)"><label for="dress">
+                  Wedding Dress
+                </label><br>
+                <input type="checkbox" id="hair" value="130" onclick="updateCost(this)"><label
+                  for="hair">Hairstylist</label><br>
+                <input type="checkbox" id="makeup" value="115" onclick="updateCost(this)"><label for="makeup">
+                  Makeup artist
+                </label><br>
               </div>
             </td>
           </tr>
@@ -177,30 +184,34 @@
           <tr>
             <td>
               <h1><input type="checkbox" id="RECEPTION" name="receptiongrp" value="10700"
-                  onclick="updateCost(this); ungrey(this)"> RECEPTION</h1>
+                  onclick="updateCost(this); ungrey(this)"> <label for="RECEPTION">RECEPTION</label></h1>
             </td>
 
             <td>
               <div class="unchecked" id="receptiongrp" name="receptiongrp">
                 <form>
                   <input type="radio" disabled="true" id="small" value="3750" name="size"
-                    onchange="updateCost(this); ungrey(this)"> Small (&lt; 50
-                  guests)<br>
+                    onchange="updateCost(this); ungrey(this)"> <label for="small">
+                    Small (&lt; 50 guests)
+                  </label><br>
                   <input type="radio" disabled="true" id="medium" value="15000" name="size"
-                    onchange="updateCost(this); ungrey(this)"> Medium (50-200
-                  guests)<br>
+                    onchange="updateCost(this); ungrey(this)"> <label for="medium">
+                    Medium (50-200 guests)
+                  </label><br>
                   <input type="radio" disabled="true" id="large" value="30000" name="size"
-                    onchange="updateCost(this); ungrey(this)"> Large (&gt; 200
-                  guests)<br>
+                    onchange="updateCost(this); ungrey(this)"> <label for="large">
+                    Large (&gt; 200
+                    guests)
+                  </label><br>
                 </form>
               </div>
             </td>
             <td>
               <div class="unchecked" id="size" name="receptiongrp">
-                <input type="checkbox" disabled="true" id="DJ" value="1400" onclick="updateCost(this)">DJ<br>
-                <input type="checkbox" disabled="true" id="favors" value="450" onclick="updateCost(this)">Favors<br>
-                <input type="checkbox" disabled="true" id="cake" value="500" onclick="updateCost(this)">Cake<br>
-                <input type="checkbox" disabled="true" id="catering">Catering<br>
+                <input type="checkbox" disabled="true" id="DJ" value="1400" onclick="updateCost(this)"><label for="DJ">DJ</label><br>
+                <input type="checkbox" disabled="true" id="favors" value="450" onclick="updateCost(this)"><label for="favors">Favors</label><br>
+                <input type="checkbox" disabled="true" id="cake" value="500" onclick="updateCost(this)"><label for="cake">Cake</label><br>
+                <input type="checkbox" disabled="true" id="catering"><label for="catering">Catering</label><br>
               </div>
 
             </td>
@@ -209,7 +220,7 @@
 
           <tr>
             <td>
-              <h1><input type="checkbox" id="honeymoon" value="4600" onclick="updateCost(this)"> HONEYMOON</h1>
+              <h1><input type="checkbox" id="honeymoon" value="4600" onclick="updateCost(this)"> <label for="honeymoon">HONEYMOON</label></h1>
             </td>
             <td></td>
             <td></td>
@@ -220,9 +231,9 @@
       </table>
       <div class=total-box>
         <div style="display:flex;">
-        <h1>Total Cost: &nbsp;</h1>
-        <h1 style=color:#D30000;>$</h1>
-        <h1 style=color:#D30000; id="total">125</h1>
+          <h1>Total Cost: &nbsp;</h1>
+          <h1 style=color:#D30000;>$</h1>
+          <h1 style=color:#D30000; id="total">125</h1>
         </div>
         <button class="reset" onclick="location.reload()">Reset</button>
       </div>
